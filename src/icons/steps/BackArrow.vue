@@ -1,0 +1,20 @@
+<script setup lang="ts">
+import { defineProps } from 'vue'
+const props = defineProps({
+  isRotate: Boolean
+})
+</script>
+
+<template>
+  <svg class="back_arrow" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="-701.5" y="-251.5" width="882" height="354" rx="19.5" stroke="black" />
+    <path d="M15 30L25 20L15 10" stroke="#C3C3C5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <rect x="-752.5" y="-557.5" width="1045" height="1481" rx="39.5" stroke="#EF5533" />
+  </svg>
+</template>
+
+<style scoped>
+.back_arrow {
+  transform: rotateY(180deg);
+}
+</style>
